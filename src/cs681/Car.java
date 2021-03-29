@@ -10,10 +10,10 @@ public class Car
 	private String model;
 	private int mileage;
 	private int year;
-	private float price;
+	private int price;
 	private int dominationCount = -1;
 	
-	private Car(String make, String model, int mileage, int year, float price)	{
+	private Car(String make, String model, int mileage, int year, int price)	{
 		
 		this.make = make;
 		this.model = model;
@@ -22,7 +22,7 @@ public class Car
 		this.price = price;
 	}
 	
-	public static Car createCar(String make, String model, int mileage, int year, float price)	{
+	public static Car createCar(String make, String model, int mileage, int year, int price)	{
 		return new Car(make, model, mileage, year, price);
 	}
 	
@@ -42,7 +42,7 @@ public class Car
 		return this.year;
 	}
 	
-	public float getPrice()	{
+	public int getPrice()	{
 		return this.price;
 	}
 
